@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">reUSE Me!</string>
+    <string name="app_note">"Waste Should not be Wasted"</string>
+    <string name="welcome_intro">Congratulation! you just took your first step to protect mother Earth from the demonically hazardous E-WASTE!</string>
+    <string name="next_button">Next</string>
+    <string name="reuse_text">If your product can be reused after being repaired then press</string>
+    <string name="reuse_button">REUSE</string>
+    <string name="recycle_text">If its no longer usable but can be recycled,then to have it recycled and get the remanent scrap disposed property after treatment press</string>
+    <string name="recycle_button">Recycle</string>
+    <string name="faq_text">Have Question?</string>
+    <string name="faq_button">F.A.Q</string>
+    <string name="mobile_text">Mobiles</string>
+    <string name="labtop_text">Laptop</string>
+    <string name="tablet_text">Tablet</string>
+    <string name="other_text">Others</string>
+</resources>
