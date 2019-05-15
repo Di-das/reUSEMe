@@ -9,11 +9,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-       // setTheme(R.style.AppTheme);
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     public void choseYouResponse(View view) {
         Intent intent = new Intent(this,UserResponse.class);
         startActivity(intent);

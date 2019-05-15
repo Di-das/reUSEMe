@@ -7,12 +7,16 @@
     android:background="@drawable/logo11"
     tools:context=".UserResponse">
 
+    <include
+        layout="@layout/toolbar"/>
+
     <TextView
         android:id="@+id/reuse_text"
         android:layout_width="0dp"
         android:layout_height="147dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="@string/reuse_text"
@@ -23,7 +27,7 @@
         app:layout_constraintBottom_toTopOf="@+id/reuse_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar" />
 
     <Button
         android:id="@+id/reuse_button"
@@ -33,11 +37,10 @@
         android:layout_marginLeft="135dp"
         android:layout_marginEnd="135dp"
         android:layout_marginRight="135dp"
-        android:background="@drawable/logo11"
         android:onClick="chooseDeviceType"
         android:text="@string/reuse_button"
-        android:textColor="@android:color/white"
-        android:textSize="36sp"
+        android:textColor="@color/browser_actions_text_color"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recycle_text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,11 +72,10 @@
         android:layout_marginLeft="135dp"
         android:layout_marginEnd="135dp"
         android:layout_marginRight="135dp"
-        android:background="@drawable/logo11"
         android:onClick="openForm"
         android:text="@string/recycle_button"
-        android:textColor="@android:color/white"
-        android:textSize="28sp"
+        android:textColor="@color/browser_actions_text_color"
+        android:textSize="21sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/recycle_text"

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">reUSE Me!</string>
     <string name="app_note">"Waste Should not be Wasted"</string>
-    <string name="welcome_intro">Congratulation! you just took your first step to protect mother Earth from the demonically hazardous E-WASTE!</string>
+    <string name="welcome_intro">You just took your first step to protect mother Earth from the demonically hazardous     E-WASTE!</string>
     <string name="next_button">Next</string>
     <string name="reuse_text">If your product can be reused after being repaired, then press</string>
     <string name="reuse_button">REUSE</string>
@@ -10,7 +10,25 @@
     <string name="faq_text">Have Question?</string>
     <string name="faq_button">F.A.Q</string>
     <string name="mobile_text">Mobiles</string>
-    <string name="labtop_text">Laptop</string>
-    <string name="tablet_text">Tablet</string>
+    <string name="labtop_text">Laptops</string>
+    <string name="tablet_text">Tablets</string>
     <string name="other_text">Others</string>
+    <string name="congrats_text">CONGRATULATIONS!!</string>
+    <string name="faq_action">F.A.Q</string>
+    <string name="about_action">About</string>
+    <string name="first_ques">What is the purpose?</string>
+    <string name="first_ans">To strengthen the implementation of EPR at consumer level by making the collection of E-Waste from the end users easy and fast</string>
+    <string name="second_ques">How is the price calculated?</string>
+    <string name="second_ans">Using probabilistic approach</string>
+    <string name="third_ques">Why two different options?</string>
+    <string name="third_ans">Because certains items which can not be recycle in anyway has to get disposed after proper treatment to maintain ecological stability and reduces landfills</string>
+    <string name="fourth_ques">How will the price by paid?</string>
+    <string name="fourth_ans">The collection representative will pay at the time of collecting E-Waste</string>
+    <string name="about_action_text">This application has been a consequence of the research conducted by a team of 5 CSE undergraduate under the enriching guidance of Mrs.Ipshita Saha.The members include:-</string>
+    <string name="mentor">Ipshita Saha(Mentor)</string>
+    <string name="member1">Jacky Kumar Shaw</string>
+    <string name="member2">Dibas Das</string>
+    <string name="member3">Anuja Mukherjee</string>
+    <string name="member4">Prashant Kumar</string>
+    <string name="member5">Mahipal Thakur</string>
 </resources>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo11">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".About">
+
+                <include layout="@layout/toolbar" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_hori1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginBottom="496dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="175dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/intro_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/about_action_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/chewy"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hori1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/my_toolbar" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_hori2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginBottom="345dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="350dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_hori3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="525dp"
+                    android:layout_marginBottom="132dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="525dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_hori4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="700dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="701dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_verti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginLeft="205dp"
+                    android:layout_marginEnd="206dp"
+                    android:layout_marginRight="206dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="197dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_mentor"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/mentor"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toTopOf="@id/mentor_name"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_verti"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/guideline_hori1"
+                    app:srcCompat="@drawable/mentor" />
+
+                <TextView
+                    android:id="@+id/mentor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mentor"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hori2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_verti"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_mentor" />
+
+                <ImageView
+                    android:id="@+id/member1_img"
+                    android:layout_width="123dp"
+                    android:layout_height="105dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/member1"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toTopOf="@id/member1_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_verti"
+                    app:layout_constraintTop_toBottomOf="@id/guideline_hori1"
+                    app:srcCompat="@drawable/jacky" />
+
+                <TextView
+                    android:id="@+id/member1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member1"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@id/guideline_hori2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_verti"
+                    app:layout_constraintTop_toBottomOf="@id/member1_img"
+                    tools:layout_editor_absoluteX="273dp"
+                    tools:layout_editor_absoluteY="376dp" />
+
+                <ImageView
+                    android:id="@+id/member2_img"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/member2"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toTopOf="@id/member2_name"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_verti"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/guideline_hori2"
+                    app:srcCompat="@drawable/dibas" />
+
+                <TextView
+                    android:id="@+id/member2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member2"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hori3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_verti"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/member2_img" />
+
+                <ImageView
+                    android:id="@+id/member3_img"
+                    android:layout_width="116dp"
+                    android:layout_height="111dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/member3"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toTopOf="@id/member3_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_verti"
+                    app:layout_constraintTop_toBottomOf="@id/guideline_hori2"
+                    app:srcCompat="@drawable/anuja" />
+
+                <TextView
+                    android:id="@+id/member3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member3"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@id/guideline_hori3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_verti"
+                    app:layout_constraintTop_toBottomOf="@id/member3_img"
+                    tools:layout_editor_absoluteX="282dp"
+                    tools:layout_editor_absoluteY="581dp" />
+
+                <ImageView
+                    android:id="@+id/member4_img"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/member4"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toTopOf="@id/member4_name"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_verti"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/guideline_hori3"
+                    app:srcCompat="@drawable/prashant" />
+
+                <TextView
+                    android:id="@+id/member4_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/member4"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hori4"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_verti"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/member4_img"
+                    tools:layout_editor_absoluteX="52dp" />
+
+                <ImageView
+                    android:id="@+id/member5_img"
+                    android:layout_width="100dp"
+                    android:layout_height="98dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/member5"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toTopOf="@id/member5_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_verti"
+                    app:layout_constraintTop_toBottomOf="@id/guideline_hori3"
+                    app:srcCompat="@drawable/thakur" />
+
+                <TextView
+                    android:id="@+id/member5_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/member5"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@id/guideline_hori4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_verti"
+                    app:layout_constraintTop_toBottomOf="@id/member5_img"
+                    tools:layout_editor_absoluteX="273dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
